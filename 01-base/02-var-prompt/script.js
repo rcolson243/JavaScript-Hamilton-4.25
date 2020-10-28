@@ -13,4 +13,10 @@
 
     // your code here
 
+    let nom = prompt("quel est votre nom ?")
+    let conf = confirm("vous vous appelez vraiment " + nom +" ?");
+    if(conf){
+        alert("Bievenue" + nom);
+    }
+    
 })();

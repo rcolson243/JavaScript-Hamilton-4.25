@@ -12,5 +12,6 @@
 (function() {
 
   // your code here
-
+  let ask = prompt("vous voulais un gâteau ?")
+  let result = confirm( "felicitation pour vos réponse Plus de gâteau pour moi alors")    
 })();

@@ -11,10 +11,18 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
+    document.getElementById("run").addEventListener("click", function(){
+       
+        let array = []
+       for (let i = 1; i < 22 ; i++) {
+        array.push( Math.pow(i, 2) )
+        console.log (array)
+           
+       }
+       alert(array)
+    }) 
+    
+       
 
-        // your code here
-
-    });
 
 })();

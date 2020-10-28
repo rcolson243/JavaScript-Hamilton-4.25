@@ -12,5 +12,17 @@
 (function() {
 
     // your code here
-
+    let a = true;
+    
+    do {
+        let age = prompt("quel est votre âge ?");
+        let sexe = prompt("quel est votre sexe ?");
+        let ville = prompt("vous venez de quel ville ?");
+        if  (confirm(`ssac ${age} ${sexe} ${ville} `)) {
+            a = false;
+        } else {
+            a = true;
+        }
+    } while (a); 
+   
 })();

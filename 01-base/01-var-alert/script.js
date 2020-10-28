@@ -9,7 +9,12 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function() 
+{
+    let whatever = "hello world!!!";
+    alert(whatever);
     // your code here
+    let raphael= "hello word!";
+    alert(raphael);
 
 })();
