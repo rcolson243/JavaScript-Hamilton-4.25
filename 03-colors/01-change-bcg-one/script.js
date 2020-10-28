@@ -13,4 +13,10 @@
 
     // your code here
 
+   /* document.querySelectorAll('input')[0].onchange = affichage_couleur ; 
+	document.querySelectorAll('input')[1].onchange = affichage_couleur ; 
+    document.querySelectorAll('input')[2].chage_couleur ;onchange = affichage_couleur;
+    document.querySelectorAll('input')[2].chage_couleur ;onchange = affi; */
+
+   
 })();
