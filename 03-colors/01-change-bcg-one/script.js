@@ -10,7 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
 
    let btnRed = document.querySelector("#red");
@@ -18,9 +17,9 @@
    let btnYellow = document.querySelector("#yellow")
    let btnBlue = document.querySelector("#blue")
 
-   btnRed.addEventListener('click', () => btnRed.style.backgroundColor='#FF0000')
-   btnGreen.addEventListener('click', () => btnGreen.style.backgroundColor='#00FF00')
-   btnYellow.addEventListener('click', () => btnYellow.style.backgroundColor='#FFFF00')
-   btnBlue.addEventListener('click', () => btnBlue.style.backgroundColor='#0000FF')
+   btnRed.addEventListener('click', () => document.body.style.backgroundColor='#FF0000')
+   btnGreen.addEventListener('click', () => document.body.style.backgroundColor='#00FF00')
+   btnYellow.addEventListener('click', () => document.body.style.backgroundColor='#FFFF00')
+   btnBlue.addEventListener('click', () => document.body.style.backgroundColor='#0000FF')
 
 })();
