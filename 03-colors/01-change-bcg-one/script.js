@@ -13,10 +13,14 @@
 
     // your code here
 
-   /* document.querySelectorAll('input')[0].onchange = affichage_couleur ; 
-	document.querySelectorAll('input')[1].onchange = affichage_couleur ; 
-    document.querySelectorAll('input')[2].chage_couleur ;onchange = affichage_couleur;
-    document.querySelectorAll('input')[2].chage_couleur ;onchange = affi; */
+   let btnRed = document.querySelector("#red");
+   let btnGreen = document.querySelector("#green")
+   let btnYellow = document.querySelector("#yellow")
+   let btnBlue = document.querySelector("#blue")
 
-   
+   btnRed.addEventListener('click', () => btnRed.style.backgroundColor='#FF0000')
+   btnGreen.addEventListener('click', () => btnGreen.style.backgroundColor='#00FF00')
+   btnYellow.addEventListener('click', () => btnYellow.style.backgroundColor='#FFFF00')
+   btnBlue.addEventListener('click', () => btnBlue.style.backgroundColor='#0000FF')
+
 })();
