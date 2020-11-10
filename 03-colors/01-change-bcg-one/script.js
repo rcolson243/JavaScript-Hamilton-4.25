@@ -10,16 +10,22 @@
 // You will have time to focus on it later.
 
 (function() {
-    // your code here
+    // my solution for exo 3-1
 
-   let btnRed = document.querySelector("#red");
-   let btnGreen = document.querySelector("#green")
-   let btnYellow = document.querySelector("#yellow")
-   let btnBlue = document.querySelector("#blue")
+    document.getElementById("red").addEventListener("click", function() {
+        // change and keep the logo
+        document.querySelector("html").style.backgroundColor = "red";
+    });
 
-   btnRed.addEventListener('click', () => document.body.style.backgroundColor='#FF0000')
-   btnGreen.addEventListener('click', () => document.body.style.backgroundColor='#00FF00')
-   btnYellow.addEventListener('click', () => document.body.style.backgroundColor='#FFFF00')
-   btnBlue.addEventListener('click', () => document.body.style.backgroundColor='#0000FF')
+    document.getElementById("green").addEventListener("click", function() {
+        document.body.style.backgroundColor = "green";
+    });
 
+    document.getElementById("yellow").addEventListener("click", function() {
+        document.body.style.backgroundColor = "yellow";
+    });
+
+    document.getElementById("blue").addEventListener("click", function() {
+        document.body.style.backgroundColor = "blue";
+    });
 })();

@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+    const valide = document.getElementById("validity");
+    const myInput = document.getElementById("pass-one");
 
-    // your code here
+    myInput.addEventListener("keyup", () => {
+        const onlyDigits = myInput.value.replace(/[^0-9 ]/g, "");
+        const check2num = onlyDigits.length >= 2;
+        const checklong = myInput.value.length >= 8;
 
+        valide.innerHTML = checklong && check2num ? "OK" : "Not ok";
+    });
 })();

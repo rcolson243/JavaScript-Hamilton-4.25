@@ -17,24 +17,20 @@
         let terme1 = +document.getElementById("op-one").value;
         let terme2 = +document.getElementById("op-two").value;
 
-        switch(operation){
+        switch (operation) {
             case "addition":
-            document.getElementById("addition").textContent = "The result is : " + (terme1 + terme2);    
-            break;
+                alert(`The result is: ${terme1 + terme2}`);
+                break;
             case "substraction":
-            document.getElementById("substraction").textContent = "LThe result is  : " + (terme1 - terme2);
-
-            break;
+                alert(`The result is: ${terme1 - terme2}`);
+                break;
             case "multiplication":
-            document.getElementById("multiplication").textContent = "The result is  : " + (terme1 * terme2);
-
-            break;
+                alert(`The result is: ${terme1 * terme2}`);
+                break;
             case "division":
-            document.getElementById("division").textContent = "The result is  : " + (terme1 / terme2);
-            break;
-            default:
-            break;
-            }
+                alert(`The result is: ${terme1 / terme2}`);
+                break;
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>
@@ -44,4 +40,3 @@
         ),
     );
 })();
-

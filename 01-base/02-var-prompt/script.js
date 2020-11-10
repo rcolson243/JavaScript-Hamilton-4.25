@@ -11,12 +11,8 @@
 
 (function() {
 
-    // your code here
+    const name = window.prompt("What's your name?");
 
-    let nom = prompt("quel est votre nom ?")
-    let conf = confirm("vous vous appelez vraiment " + nom +" ?");
-    if(conf){
-        alert("Bievenue" + nom);
-    }
-    
+    window.alert(`Hello, ${name}!`);
+
 })();

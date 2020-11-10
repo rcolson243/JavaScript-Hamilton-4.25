@@ -10,7 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
     const fruits = [
         "cerise",
         "durian",
@@ -28,6 +27,11 @@
         "cerise",
     ];
 
-    // your code here
-
+    // my solution 5-11
+    document.getElementById("run").addEventListener("click", function() {
+        // const dedupe = fruits.filter((item, index) => fruits.indexOf(item) === index);
+        const dedupe = Array.from(new Set(fruits));
+        // const dedupe = [...new Set(fruits)];
+        console.log(dedupe);
+    });
 })();

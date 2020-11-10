@@ -10,7 +10,22 @@
 // You will have time to focus on it later.
 
 (function() {
+    const target = document.getElementById("target");
+    // recup la phrase & divise le texte pour séparé chaque lettre et crée un tableau
+    const text = target.innerText.split("");
 
-    // your code here
+    // replace le contenu de target par du "vide"
+    target.innerText = "";
 
+    const addcharacter = i => {
+        target.innerHTML += text[i];
+
+        if (i < text.length) {
+            setTimeout(() => {
+                addcharacter(i+1);
+            }, Math.floor(Math.random() * 400 - 200) + 200);
+        }
+    };
+
+    addcharacter(0);
 })();

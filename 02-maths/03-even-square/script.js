@@ -10,19 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function() {
+        let number = 2, results = [];
 
-    document.getElementById("run").addEventListener("click", function(){
-       
-        let array = []
-       for (let i = 1; i < 22 ; i++) {
-        array.push( Math.pow(i, 2) )
-        console.log (array)
-           
-       }
-       alert(array)
-    }) 
-    
-       
+        while (number <= 21) {
+            results.push(number ** 2); // Math.pow(number, 2)
+            number += 2;
+        }
 
-
+        alert(results);
+    });
 })();

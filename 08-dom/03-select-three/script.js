@@ -10,7 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    // NOTE: querySelectorAll returns a NodeList (≠ Array)!
+    Array.from( document.querySelectorAll(".target") ).forEach(x => x.innerText = "owned");
 })();

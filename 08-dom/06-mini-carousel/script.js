@@ -10,8 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var gallery= [
+    let gallery = [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -19,6 +18,13 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    let index = 0;
+    const image = document.querySelector("img");
 
+    document.getElementById("next").addEventListener("click", () => {
+        if (++index === gallery.length){
+            index = 0;
+        }
+        image.src = gallery[index];
+    });
 })();

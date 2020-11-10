@@ -10,8 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    var people = [
+    const people = [
         {
             firstname: "Grenville",
             lastname: "Stive",
@@ -89,6 +88,12 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        const total = people.reduce(
+            (accumulator, {age}) => accumulator + age,
+            0,
+        );
 
+        console.log(total);
+    });
 })();

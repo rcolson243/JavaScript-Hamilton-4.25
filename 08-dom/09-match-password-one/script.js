@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    document.getElementById("run").addEventListener("click", function() {
+        const passwordOne = document.getElementById("pass-one").value;
+        const passwordTwo = document.getElementById("pass-two").value;
+        document
+            .querySelectorAll("input")
+            .forEach(
+                elt =>
+                    (elt.style.borderColor =
+                        passwordOne !== passwordTwo ? "red" : "silver"),
+            );
+    });
 })();

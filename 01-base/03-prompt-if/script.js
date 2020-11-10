@@ -10,8 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
+    const wantsCake = confirm("Want cake?");
 
-  // your code here
-  let ask = prompt("vous voulais un gâteau ?")
-  let result = confirm( "felicitation pour vos réponse Plus de gâteau pour moi alors")    
+    alert(
+        wantsCake
+            ? "Congrats! Here's your virtual cake!"
+            : "More cake for me then :p !",
+    );
 })();

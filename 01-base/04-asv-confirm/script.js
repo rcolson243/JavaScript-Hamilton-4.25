@@ -9,20 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function collectDatas() {
+    let age = prompt("Enter your age");
+    let gender = prompt("Enter your gender");
+    let address = prompt("Enter your locality");
+    let allRight = confirm( `You are ${age} years old ${gender} and you live in ${address}`);
 
-    // your code here
-    let a = true;
-    
-    do {
-        let age = prompt("quel est votre âge ?");
-        let sexe = prompt("quel est votre sexe ?");
-        let ville = prompt("vous venez de quel ville ?");
-        if  (confirm(`ssac ${age} ${sexe} ${ville} `)) {
-            a = false;
-        } else {
-            a = true;
-        }
-    } while (a); 
-   
+    if (allRight) {
+        alert("Thanks for your participation");
+    } else {
+        collectDatas();
+    }
 })();

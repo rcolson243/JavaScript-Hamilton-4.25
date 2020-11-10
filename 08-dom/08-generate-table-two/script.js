@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    const body = document.getElementById("target");
+    const tbl = document.createElement("table");
+    const tblBody = document.createElement("tbody");
+    for (let j = 0; j < 10; j++) {
+        const row = document.createElement("tr");
+        for (let i = 0; i < 10; i++) {
+            const cell = document.createElement("td");
+            cell.innerHTML = `${i + 1}&times;${j + 1}=${(i + 1) * (j + 1)}`;
+            row.appendChild(cell);
+        }
+        tblBody.appendChild(row);
+    }
+    tbl.appendChild(tblBody);
+    body.appendChild(tbl);
 })();

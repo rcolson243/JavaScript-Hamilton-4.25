@@ -14,11 +14,10 @@
 
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
-        let terme1 = +document.getElementById("op-one").value;
+        let terme1 = parseInt( document.getElementById("op-one").value, 10 );
         let terme2 = +document.getElementById("op-two").value;
 
-        document.getElementById("addition").textContent = "La somme est : " + (terme1 + terme2);
-
+        alert(`Result is: ${terme1 + terme2}`);
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
@@ -26,7 +25,7 @@
         let terme1 = +document.getElementById("op-one").value;
         let terme2 = +document.getElementById("op-two").value;
 
-        document.getElementById("substraction").textContent = "La somme est : " + (terme1 - terme2);
+        alert(`Result is: ${terme1 - terme2}`);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
@@ -34,8 +33,7 @@
         let terme1 = +document.getElementById("op-one").value;
         let terme2 = +document.getElementById("op-two").value;
 
-        document.getElementById("multiplication").textContent = "La somme est : " + (terme1 * terme2);
-         
+        alert(`Result is: ${terme1 * terme2}`);
     });
 
     document.getElementById("division").addEventListener("click", function() {
@@ -43,6 +41,6 @@
         let terme1 = +document.getElementById("op-one").value;
         let terme2 = +document.getElementById("op-two").value;
 
-        document.getElementById("division").textContent = "La somme est : " + (terme1 / terme2);
+        alert(`Result is: ${terme1 / terme2}`);
     });
 })();
