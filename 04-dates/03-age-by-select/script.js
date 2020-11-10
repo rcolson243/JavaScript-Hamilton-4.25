@@ -22,7 +22,7 @@
 
         c.innerHTML = "good evening";
     } */
-    function getAge(date) { 
+    /*function getAge(date) { 
         var diff = Date.now() - date.getTime();
         var age = new Date(diff); 
         return Math.abs(age.getUTCFullYear() - 1970);
@@ -34,7 +34,21 @@
         var diff = d2.getTime() - d1.getTime();
         return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
     }
-    console.log( getAge(new Date(1978, 10, 3)) );
+    console.log( getAge(new Date(1978, 10, 3)) );*/
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        bday = document.getElementById("dob-day").value;
+        bmonth = document.getElementById("dob-month").value;
+        byear = document.getElementById("dobyear").value;
+        
+        if ('bday<') {
+            
+        } else {
+            
+        }
+
+    });
     
 
 
