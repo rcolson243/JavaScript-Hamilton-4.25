@@ -9,9 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 document.getElementById("run").addEventListener("click", () => {
-
     // your code here
-
     window.lib.getPosts((error, articles) => {
             (error) ? console.error(error) : console.table(articles);
         }

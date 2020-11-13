@@ -9,17 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
+document.getElementById("run").addEventListener("click", () => {
     // your code here
-    document.getElementById('run').addEventListener('click', () => {
-        window.lib.getPersons()
-            .then(data => {
-                data.forEach(element => {
-                    window.lib.getComments(element.id).then(data => {
-                        element.comments = data;
-                        console.log(element)
-                    })
-                });
-            })
-    })
-})();
+    window.lib.getPersons((error, articles) => {
+            (error) ? console.error(error) : console.table(articles);
+        }
+    );
+  });
