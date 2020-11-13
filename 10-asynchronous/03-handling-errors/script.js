@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        window.lib.getPersons()
+            .then(data => {
+                data.forEach(element => {
+                    window.lib.getComments(element.id).then(data => {
+                        element.comments = data;
+                        console.log(element)
+                    })
+                });
+            })
+    })
 })();
